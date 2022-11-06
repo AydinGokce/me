@@ -1,13 +1,11 @@
 import './App.css';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import React, { useRef, useEffect } from 'react';
-import Home from './pages/Home';
 import About from './pages/About';
-import { createTheme, ThemeProvider, CssBaseline, Box, IconButton } from '@mui/material';
+import { createTheme, ThemeProvider, CssBaseline, Box } from '@mui/material';
 import './style.scss';
-import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import Tetra from './assets/cursor.gif';
- 
+import { Helmet } from 'react-helmet';
 
 const theme = createTheme({
   palette: {
@@ -21,11 +19,12 @@ const theme = createTheme({
 })
 
 function App() {
-
   const navigate = useNavigate();
 
   const mainCursor = useRef(null);
   const secondaryCursor = useRef(null);
+  const container = useRef(null);
+
   const positionRef = useRef({
     mouseX: 0,
     mouseY: 0,
@@ -42,7 +41,9 @@ function App() {
         const { clientX, clientY } = event;
 
         const mouseX = clientX;
-        const mouseY = clientY - window.innerHeight;
+        const mouseY = container.current ? clientY - container.current.clientHeight : clientY - window.innerHeight;
+
+        console.log(`${clientY} ${window.innerHeight} ${mouseY}`)
 
         positionRef.current.mouseX = mouseX - secondaryCursor.current.clientWidth / 2;
         positionRef.current.mouseY = mouseY - secondaryCursor.current.clientHeight / 2;
@@ -92,9 +93,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
 
-        <Routes>
-          <Route path="/" element={<About />} />
-        </Routes>
+        <About theme={theme} containerRef={container} />
         <Box onClick={() => {
           navigate('/about')
         }}>
@@ -126,6 +125,10 @@ function App() {
           </div>
         </Box>
       </ThemeProvider>
+      <Helmet>
+        <title>Home</title>
+        <meta name="description" content="About Aydin Gokce" />
+      </Helmet>
     </div>
   );
 }
