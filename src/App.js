@@ -7,6 +7,21 @@ import './style.scss';
 import Tetra from './assets/cursor.gif';
 import { Helmet } from 'react-helmet';
 
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyB3nCos29fJeLRTWLMg9-Cgz1fXvXZ31R4",
+  authDomain: "aydin-gokce-ad06f.firebaseapp.com",
+  projectId: "aydin-gokce-ad06f",
+  storageBucket: "aydin-gokce-ad06f.appspot.com",
+  messagingSenderId: "777886345951",
+  appId: "1:777886345951:web:ac09b05f2d8360d201d76a"
+};
+
+
+// Initialize Firebase
+
+const app = initializeApp(firebaseConfig);
 const theme = createTheme({
   palette: {
     background: {
@@ -14,7 +29,7 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: ["sans-serif", "Montserrat Alternates"].join(","),
+    fontFamily: ["Ubuntu", "sans-serif", "Montserrat Alternates"].join(","),
   }
 })
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import {  useMediaQuery, Box, Typography, Grid, Fade, Accordion, AccordionDetails, AccordionSummary, IconButton } from '@mui/material'
+import { useMediaQuery, Box, Typography, Grid, Fade, Accordion, AccordionDetails, AccordionSummary, Link, IconButton } from '@mui/material'
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import EmailIcon from '@mui/icons-material/Email';
@@ -64,11 +64,11 @@ function About(props) {
                 </Grid>
                 <Grid item sx={{ marginTop: '20px', }}>
                     <Box display='flex' flexDirection='column' sx={{ maxWidth: "500px", padding: "0px 10px" }}>
-                        <Typography gutterBottom align="left" variant="body1" color="white" sx={{fontWeight: 'bold'}}>
+                        <Typography gutterBottom align="left" variant="body1" color="white" sx={{ fontWeight: 'bold' }}>
                             What am I up to right now? &nbsp;
                         </Typography>
-                        <Typography gutterBottom align="left" variant="body1" color="white">
-                            AI robotics research at Virgina Tech. See these legs? They're very complicated for humans to model, but easy for an AI to learn. So I'm working on teaching them how to move.
+                        <Typography gutterBottom align="left" variant="body1" color="white" sx={{marginBottom: "25px"}}>
+                            Building <Link href='https://testnet.unosa.xyz' target="_blank">Unosa.xyz</Link>. If you're into NFTs, check it out. It's a game changer! When I'm not working on Unosa, I'm teaching legs to move using AI.
                         </Typography>
                     </Box>
                     <Box
