@@ -13,6 +13,7 @@ import SchoolOfAthens from '../assets/athens.jpg'
 import MeRectangle from '../assets/me_rectangle.png'
 import Tetra from '../assets/tetra.gif'
 import PiSlices from '../assets/pislices.gif'
+import Pythagoras from '../assets/pythagoras.png'
 
 function About() {
     const [expanded1, setExpanded1] = React.useState(false);
@@ -25,8 +26,8 @@ function About() {
                 justifyContent='space-between'
                 spacing={0}
                 sx={{ minHeight: '100vh' }}>
-                <Grid item>
-                    <Grid container sx={{height: 'min-content', borderTop: '1px solid white', borderBottom: '1px solid white'}}>
+                <Grid item sx={{padding: "5px"}}>
+                    <Grid container sx={{height: 'min-content', border: '1px solid white'}}>
                         <Grid item display='flex' justifyContent='center' alignItems='center'>
                             <Box
                                 component='img'
@@ -59,16 +60,25 @@ function About() {
                             </Typography>
                         </Grid>
                         <Grid item display='flex' justifyContent='flex-end' sx={{right: 0, marginLeft: 'auto', height: 'min-content'}}>
-                            <Box
+                        <Box
                                 component='img'
-                                src={PiSlices}
+                                src={Pythagoras}
                                 sx={{
-                                    border: '1px solid white',
-                                    borderBottom: 'none',
+                                    borderLeft: '1px solid white',
                                     width: '150px',
                                     height: '150px'
                                 }}
                             />
+                            <Box
+                                component='img'
+                                src={PiSlices}
+                                sx={{
+                                    borderLeft: '1px solid white',
+                                    width: '150px',
+                                    height: '150px'
+                                }}
+                            />
+                           
                         </Grid>
                     </Grid>
                 </Grid>
