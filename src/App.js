@@ -25,7 +25,7 @@ const app = initializeApp(firebaseConfig);
 const theme = createTheme({
   palette: {
     background: {
-      default: "#000000",
+      default: "#111111",
     }
   },
   typography: {
@@ -127,7 +127,7 @@ function App() {
             alt="main cursor"
             ref={mainCursor}
             sx={{
-              width: '80px',
+              width: '40px',
               backgroundColor: 'white',
             }}
             />
@@ -136,7 +136,6 @@ function App() {
 
           </Box>
           <div className="secondary-cursor" ref={secondaryCursor}>
-            <div className="cursor-background"></div>
           </div>
         </Box>
       </ThemeProvider>

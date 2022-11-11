@@ -2,7 +2,7 @@ import React from 'react'
 import { useMediaQuery, Box, Typography, Grid, } from '@mui/material'
 import { TextLoop } from "react-text-loop-next";
 import MeRectangle from '../assets/me_rectangle.png'
-import PiSlices from '../assets/pislices.gif'
+import PiSlices from '../assets/pislices3.gif'
 import Pythagoras from '../assets/pythagoras.png'
 import Styles from '../Styles';
 
@@ -56,9 +56,6 @@ function Header(props) {
                     Hi! I'm Aydin
                 </Typography>
                 <Box display='flex' justifyContent='flex-start' alignItems='flex-start'>
-                    <Typography variant='h5' color='white' sx={{ fontWeight: '1', }}>
-                        I'm a&nbsp;
-                    </Typography>
                     <TextLoop interval={2000} mask={true}>
                         <Typography variant='h5' color='white' sx={{ fontWeight: '1' }}>researcher</Typography>
                         <Typography variant='h5' color='white' sx={{ fontWeight: '1' }}>engineer</Typography>
@@ -88,11 +85,10 @@ function Header(props) {
                             Hi! I'm Aydin
                         </Typography>
                         <Box display="flex" width="max-content" alignItems='center' justifyContent='center'>
-                        <Typography variant="h4" align="left" color="white" sx={styles.header.headerJobs}>I'm a&nbsp;</Typography>
                             <TextLoop>
-                                <Typography variant="h4" align="left" color="white" sx={styles.header.headerJobs}>engineer</Typography>
-                                <Typography variant="h4" align="left" color="white" sx={styles.header.headerJobs}>entrepreneur</Typography>
-                                <Typography variant="h4" align="left" color="white" sx={styles.header.headerJobs}>researcher</Typography>
+                                <Typography variant="h4" align="left" color="white" sx={styles.header.headerJobs}>Engineer</Typography>
+                                <Typography variant="h4" align="left" color="white" sx={styles.header.headerJobs}>Entrepreneur</Typography>
+                                <Typography variant="h4" align="left" color="white" sx={styles.header.headerJobs}>Researcher</Typography>
                             </TextLoop>
                         </Box>
                     </Box>
