@@ -17,7 +17,7 @@ function ProjectCard(props) {
         <Card sx={{ backgroundColor: "#111111" }}>
             <Box display="flex" flexDirection="column">
                 <CardMedia sx={{
-                    maxHeight: "200px",
+                    height: "200px",
                     overflow: "hidden",
                     display: "flex",
                     justifyContent: "center",

@@ -12,7 +12,7 @@ import { useMediaQuery, Box, Typography, Button, Grid, Fade, Divider, Accordion,
 import './style.scss';
 import Tetra from './assets/cursor.gif';
 import { Helmet } from 'react-helmet';
-import Mordo from './assets/mordo.JPG'
+import Mordo from './assets/mordo2.JPG'
 import ProjectCard from './components/ProjectCard';
 import { initializeApp } from "firebase/app";
 import Legs from './assets/legs.jpeg';
@@ -20,7 +20,7 @@ import Planarian from './assets/planarian.gif';
 import SchoolOfAthens from './assets/athens.jpg';
 import Wheatley from './assets/wheatley.gif';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
-import GPT3 from './assets/gpt3.png';
+import GPT3 from './assets/gpt3.webp';
 import RaceQuad from './assets/race_quad.jpg'
 import Cerebellia from './assets/cerebellia_logo.png'
 import UnosaLogo from './assets/unosa_logo.png'
