@@ -453,7 +453,7 @@ function App() {
               <IconButton onClick={() => window.open("https://instagram.com/aydinguy", "_blank")}>
                 <InstagramIcon sx={{ color: "white" }} />
               </IconButton>
-              <IconButton onClick={() => window.open("https://twitter.com/aydinguy", "_blank")}>
+              <IconButton onClick={() => window.open("https://twitter.com/aydinwastaken", "_blank")}>
                 <TwitterIcon sx={{ color: "white" }} />
               </IconButton>
 
