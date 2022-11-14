@@ -31,6 +31,7 @@ import MordoCouch from './assets/mordo_couch.jpg'
 import Drones from './assets/drones.jpg'
 import S500 from './assets/s500.jpg'
 import Pendulum from './assets/pendulum.jpg'
+import ProjectParser from './components/ProjectParser';
 
 const firebaseConfig = {
   apiKey: "AIzaSyB3nCos29fJeLRTWLMg9-Cgz1fXvXZ31R4",
@@ -415,8 +416,9 @@ function App() {
           <Routes>
             <Route path="/" element={<About theme={theme} projectCards={<GetProjectCards />} />} />
             {
-              GetProjectPaths(theme)
+              //GetProjectPaths(theme)
             }
+            <Route path="*" element={<ProjectParser theme={theme} pinfo={projectsInfo} />} />
           </Routes>
           <Box
             display="flex"

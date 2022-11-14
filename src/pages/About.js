@@ -1,10 +1,11 @@
 import React from 'react'
-import { useMediaQuery, Box, Typography, Grid, Fade, Divider, CssBaseline, Accordion, AccordionDetails, AccordionSummary, Link, IconButton, Chip, Card, CardMedia, CardContent, ThemeProvider } from '@mui/material'
+import { useMediaQuery, Box, Typography, Button, Grid, Fade, Divider, Accordion, createTheme, ThemeProvider, CssBaseline, AccordionDetails, AccordionSummary, Link, IconButton, Chip, Card, CardMedia, CardContent, ButtonBase } from '@mui/material'
 import ExpGrid from '../components/ExpGrid'
 import Tetra from '../assets/tetra2.gif'
 import Styles from '../Styles';
 import Header from '../components/Header';
 import SkillsGrid from '../components/SkillsGrid';
+
 
 
 function About(props) {

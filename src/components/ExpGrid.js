@@ -93,6 +93,7 @@ function ExpGrid() {
                                 tags={workExperience.tags}
                                 dates={workExperience.dates}
                                 description={workExperience.description}
+                                key={index}
                             />
                         </Grid>
                     )
