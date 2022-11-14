@@ -7,10 +7,10 @@ import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 function ProjectParser(props) {
 
     const { pinfo, theme } = props;
-    const pathName = window.location.pathname;
+    const pathName = `${window.location}`.split("#").pop();
     const project = pinfo.find((project) => project.path === pathName);
     const navigate = useNavigate();
-
+    console.log(pathName)
     if (project === undefined) {
         return <Navigate to="/" />
     }
