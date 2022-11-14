@@ -48,14 +48,14 @@ function ProjectCard(props) {
                     <Accordion sx={{ backgroundColor: "inherit", color: "white", border: "1px solid white", width: '100%' }} >
                         <AccordionSummary expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}>
                             <Box display="flex" flexDirection="column">
-                                <Typography variant="body1" align="left">
+                                <Typography variant="body1" align="left" sx={{fontWeight: "300"}}>
                                     {title}
                                 </Typography>
                             </Box>
                         </AccordionSummary>
                         <Divider variant="middle" sx={{ backgroundColor: "white", height: "1px" }} />
                         <AccordionDetails display="flex" alignItems="center" justifyContent="center">
-                            <Typography variant={"body2"} sx={{ color: "white" }}>
+                            <Typography variant={"body2"} sx={{ color: "white", fontWeight: "300" }}>
                                 {shortDescription}
                             </Typography>
                         </AccordionDetails>
@@ -65,7 +65,7 @@ function ProjectCard(props) {
                                 onMouseEnter={() => { setIsHovered(true) }}
                                 onMouseLeave={() => { setIsHovered(false) }}
                                 onClick={() => navigate(link)} endIcon={<ArrowCircleRightIcon sx={isHovered ? { color: "#111111" } : { color: "white" }} />} >
-                                <Typography color={isHovered ? "#111111" : "white"}>
+                                <Typography color={isHovered ? "#111111" : "white"} sx={{fontWeight: "300"}}>
                                     See More
                                 </Typography>
                             </Button>

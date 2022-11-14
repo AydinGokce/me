@@ -59,8 +59,8 @@ const theme = createTheme({
 const Pandora_ld = () => {
   return (
     <React.Fragment>
-      <Typography gutterBottom variant='body1'>{"The TREC Lab has spent several years working on a cutting edge humanoid robot named PANDORA. The chassis is 3d printed and actuated by linear series elastic actuators. "}</Typography>
-      <Typography gutterBottom variant='body1'>{"Writing robust control policies for bipedal robots is notoriously difficult, especially when introduced with latent, unmodelable elastic properties. I'm working towards developing a machine learning framework to train the legs to perform actions using deep reinforcement learning and model-predictive control."}</Typography>
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{"The TREC Lab has spent several years working on a cutting edge humanoid robot named PANDORA. The chassis is 3d printed and actuated by linear series elastic actuators. "}</Typography>
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{"Writing robust control policies for bipedal robots is notoriously difficult, especially when introduced with latent, unmodelable elastic properties. I'm working towards developing a machine learning framework to train the legs to perform actions using deep reinforcement learning and model-predictive control."}</Typography>
       <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" sx={{ margin: "50px" }}>
         <Box
           component="img"
@@ -70,11 +70,11 @@ const Pandora_ld = () => {
           height="auto"
           sx={{ borderRadius: "10px" }}
         />
-        <Typography align="center" variant="caption" sx={{ maxWidth: "250px" }}>
+        <Typography sx={{fontWeight: "inherit", maxWidth: "250px"}}align="center" variant="caption">
           The Pendulum
         </Typography>
       </Box>
-      <Typography gutterBottom variant='body1'>{"I'm currently working on an RL position controller for `The Pendulum` (pictured above) which is a single DOF joint resemblant of Pandora's SEAs. Success with this will transalate directly to the robot which uses the same hardware stack."}</Typography>
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{"I'm currently working on an RL position controller for `The Pendulum` (pictured above) which is a single DOF joint resemblant of Pandora's SEAs. Success with this will transalate directly to the robot which uses the same hardware stack."}</Typography>
     </React.Fragment>
   )
 }
@@ -82,9 +82,9 @@ const Pandora_ld = () => {
 const Unosa_ld = () => {
   return (
     <React.Fragment>
-      <Link href='https://Unosa.xyz' target="_blank" rel="noopener"><Typography variant="h4" gutterBottom>Unosa.xyz</Typography></Link>
-      <Typography gutterBottom variant='body1'>{"Unosa is the most dynamic fractional NFT tool. It's a web app supported by an underlying smart contract. It allows groups of people to co-buy NFTs and own arbitrary percentages of any NFTs. Traders are also free to buy and sell individual shares, combining or splitting them up as they please. This is made possible by our advanced smart contract which stores equity shares as 1155 tokens."}</Typography>
-      <Typography gutterBottom variant='body1'>{"For inquiries, reach out to me at aydin@mordo-labs.com"}</Typography>
+      <Link href='https://Unosa.xyz' target="_blank" rel="noopener"><Typography sx={{fontWeight: "inherit"}}variant="h4" gutterBottom>Unosa.xyz</Typography></Link>
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{"Unosa is the most dynamic fractional NFT tool. It's a web app supported by an underlying smart contract. It allows groups of people to co-buy NFTs and own arbitrary percentages of any NFTs. Traders are also free to buy and sell individual shares, combining or splitting them up as they please. This is made possible by our advanced smart contract which stores equity shares as 1155 tokens."}</Typography>
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{"For inquiries, reach out to me at aydin@mordo-labs.com"}</Typography>
     </React.Fragment>
   )
 }
@@ -92,7 +92,7 @@ const Unosa_ld = () => {
 const Mordo_ld = () => {
   return (
     <React.Fragment>
-      <Typography gutterBottom variant='body1'>{"Mordo is a 3D-printed 12DOF wearable robot snake. I built it for fun. It's actuated by servos connected by 3D printed brackets I designed in Fusion 360. At the head, one eye is an 8 watt burning laser and the other eye is a camera. I built in simple voice commands to activate the laser, activate the camera, and perform simple movements. "}</Typography>
+      <Typography sx={{fontWeight: "inherit"}} gutterBottom variant='body1'>{"Mordo is a 3D-printed 12DOF wearable robot snake. I built it for fun. It's actuated by servos connected by 3D printed brackets I designed in Fusion 360. At the head, one eye is an 8 watt burning laser and the other eye is a camera. I built in simple voice commands to activate the laser, activate the camera, and perform simple movements. "}</Typography>
       <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" sx={{ margin: "50px" }}>
         <Box
           component="img"
@@ -102,11 +102,11 @@ const Mordo_ld = () => {
           height="auto"
           sx={{ borderRadius: "10px" }}
         />
-        <Typography align="center" variant="caption" sx={{ maxWidth: "250px" }}>
+        <Typography sx={{fontWeight: "inherit", maxWidth: "250px"}} align="center" variant="caption">
           The laser is 8 watts, which can burn through cardboard and start fires. It's loads of fun (and danger).
         </Typography>
       </Box>
-      <Typography gutterBottom variant='body1'>{"The user must wear a gyro accelerometer on their glasses. There is another one on the snake chassis. The angle of the user's head is calculated by subtracting the rotation angles between the two accelerometers, which enables the snake to point its head in the same direction as its user, giving it lifelike movement."}</Typography>
+      <Typography sx={{fontWeight: "inherit"}} gutterBottom variant='body1'>{"The user must wear a gyro accelerometer on their glasses. There is another one on the snake chassis. The angle of the user's head is calculated by subtracting the rotation angles between the two accelerometers, which enables the snake to point its head in the same direction as its user, giving it lifelike movement."}</Typography>
       <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" sx={{ margin: "50px" }}>
         <Box
           component="img"
@@ -116,11 +116,11 @@ const Mordo_ld = () => {
           height="auto"
           sx={{ borderRadius: "10px" }}
         />
-        <Typography align="center" variant="caption" sx={{ maxWidth: "250px" }}>
+        <Typography sx={{fontWeight: "inherit", maxWidth: "250px" }}align="center" variant="caption">
           cute :)
         </Typography>
       </Box>
-      <Typography gutterBottom variant='body1'>{"There are a couple problems with Mordo. All the processing is synchronous and done in Python, causing it to be slow and less responsive. It's also large and clunky. I'm working on V2 which will have a more robust and compact form, longer battery life, and majority of the control will be written in a multithreaded C program. I'm also working on making the movements more fluid and lifelike in general, with the ability to lock onto people or do head tracking."}</Typography>
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{"There are a couple problems with Mordo. All the processing is synchronous and done in Python, causing it to be slow and less responsive. It's also large and clunky. I'm working on V2 which will have a more robust and compact form, longer battery life, and majority of the control will be written in a multithreaded C program. I'm also working on making the movements more fluid and lifelike in general, with the ability to lock onto people or do head tracking."}</Typography>
     </React.Fragment>
   )
 }
@@ -128,9 +128,9 @@ const Mordo_ld = () => {
 const CompBio_ld = () => {
   return (
     <React.Fragment>
-      <Typography gutterBottom variant='body1'>{"I'm enamored with the work going on at the intersection of computational biology, morphogenesis and information theory. This provides a tractable framework for engineering self-repairing robots, full limb regeneration, and more."}</Typography>
-      <Typography gutterBottom variant='body1'>{"As a robotics engineer, I'm intensely drawn towards this field of research because it's underleveraged. Evolution gave us self-repairing hardware that's extremely robust, generalizable and modular. Instead of trying to build robots using motors and pistons with our monkey brains, let's leverage a billion years of combinatorial optimization and the computational superiority of AI!"}</Typography>
-      <Typography gutterBottom variant='body1'>{"My research in this domain is (currently) independent. I'm reading papers and running experiments. I'm working on a simulation which I will announce soon depending on the results."}</Typography>
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{"I'm enamored with the work going on at the intersection of computational biology, morphogenesis and information theory. This provides a tractable framework for engineering self-repairing robots, full limb regeneration, and more."}</Typography>
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{"As a robotics engineer, I'm intensely drawn towards this field of research because it's underleveraged. Evolution gave us self-repairing hardware that's extremely robust, generalizable and modular. Instead of trying to build robots using motors and pistons with our monkey brains, let's leverage a billion years of combinatorial optimization and the computational superiority of AI!"}</Typography>
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{"My research in this domain is (currently) independent. I'm reading papers and running experiments. I'm working on a simulation which I will announce soon depending on the results."}</Typography>
     </React.Fragment>
   )
 }
@@ -138,8 +138,8 @@ const CompBio_ld = () => {
 const Cerebellia_ld = () => {
   return (
     <React.Fragment>
-      <Link href='https://cerebellia.com' target="_blank" rel="noopener"><Typography variant="h4" gutterBottom>Cerebellia.com</Typography></Link>
-      <Typography gutterBottom variant='body1'>{"Cerebellia is a tool which tracks the symptoms of tremor patients. Using an apple watch or our custom watch hardware, patient tremors get continually recorded and quantified. Patients can use our app to view the progression of their symptoms at any time. They may also set new habits or experiments to see how different lifestyle changes affect their symptoms. For example, a patient may wonder whether coffee makes their tremors worse. With Cerebellia, they may use algorithmic symptom analysis to see how their overall symptoms vary on days when they do have coffee versus when they don't."}</Typography>
+      <Link href='https://cerebellia.com' target="_blank" rel="noopener"><Typography sx={{fontWeight: "inherit"}}variant="h4" gutterBottom>Cerebellia.com</Typography></Link>
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{"Cerebellia is a tool which tracks the symptoms of tremor patients. Using an apple watch or our custom watch hardware, patient tremors get continually recorded and quantified. Patients can use our app to view the progression of their symptoms at any time. They may also set new habits or experiments to see how different lifestyle changes affect their symptoms. For example, a patient may wonder whether coffee makes their tremors worse. With Cerebellia, they may use algorithmic symptom analysis to see how their overall symptoms vary on days when they do have coffee versus when they don't."}</Typography>
 
       <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" sx={{ margin: "50px" }}>
         <Box
@@ -150,11 +150,11 @@ const Cerebellia_ld = () => {
           height="auto"
           sx={{ borderRadius: "10px" }}
         />
-        <Typography align="center" variant="caption" sx={{ maxWidth: "250px" }}>
+        <Typography sx={{fontWeight: "inherit", maxWidth: "250px"}}align="center" variant="caption">
           Hardware we built to record tremor data. Also works with an Apple Watch.
         </Typography>
       </Box>
-      <Typography gutterBottom variant='body1'>{"We killed this startup after 6 months. We discovered that the system for testing symptoms ultimately required too much coordination, work and analysis on the consumer side, which were often elderly disabled people. We dissolved the company and took away a ton of valuable lessons, making the experience well worth the effort."}</Typography>
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{"We killed this startup after 6 months. We discovered that the system for testing symptoms ultimately required too much coordination, work and analysis on the consumer side, which were often elderly disabled people. We dissolved the company and took away a ton of valuable lessons, making the experience well worth the effort."}</Typography>
     </React.Fragment>
   )
 }
@@ -162,9 +162,9 @@ const Cerebellia_ld = () => {
 const Wheatley_ld = () => {
   return (
     <React.Fragment>
-      <Typography gutterBottom variant='body1'>{"Wheatley is a teleoperated robot built by 6543 Pumatech Robotics for the FRC 2019 Deep Space competition. I was the lead for the electronics & pneumatics."}</Typography>
-      <Typography gutterBottom variant='body1'>{"Wheatley has pneumatic pistons enabling it to climb onto platforms, pick up disks, and scoop balls for relocation."}</Typography>
-      <Typography gutterBottom variant='body1'>{"We competed in the Oxon Hill and Haymarket regional tournaments, winning first and second place, respectively, qualifying for the district championships."}</Typography>
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{"Wheatley is a teleoperated robot built by 6543 Pumatech Robotics for the FRC 2019 Deep Space competition. I was the lead for the electronics & pneumatics."}</Typography>
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{"Wheatley has pneumatic pistons enabling it to climb onto platforms, pick up disks, and scoop balls for relocation."}</Typography>
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{"We competed in the Oxon Hill and Haymarket regional tournaments, winning first and second place, respectively, qualifying for the district championships."}</Typography>
     </React.Fragment>
   )
 }
@@ -172,37 +172,37 @@ const Wheatley_ld = () => {
 const GPT3AI_ld = () => {
   return (
     <React.Fragment>
-      <Link href='https://3214ai.com' target="_blank" rel="noopener"><Typography variant="h4" gutterBottom>3214ai.com</Typography></Link>
-      <Typography gutterBottom variant='body1'> {`
+      <Link href='https://3214ai.com' target="_blank" rel="noopener"><Typography sx={{fontWeight: "inherit"}}variant="h4" gutterBottom>3214ai.com</Typography></Link>
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'> {`
           3214ai.com is an instance of GPT-3 which was fine-tuned and prompt engineered to be a teacher assistant for my Systems course.
         `}</Typography>
-      <Typography gutterBottom variant='body1'>{`
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{`
           Systems is the hardest class at Virginia Tech. It involves programming C thread pools, a custom shell, dynamic memory allocators and more. The TA queues often get very long, sometimes reaching over 100 students when a deadline is nigh. One of the biggest complaints from TAs was that most of the questions asked have already been answered in the course's FAQ, forum, discord or project handout. But most people aren't inclined to spend an hour combing through forum posts to find an answer to their arcane memory problem. How can we solve this issue?
         `}</Typography>
-      <Typography gutterBottom variant='body1'>{`
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{`
         The answer is to use a language model to compress all the information across the course into an instance of GPT-3 and just ask that. There are a couple important requirements. 
         `}</Typography>
       <ul>
         <li>
-          <Typography gutterBottom variant='body1'>Students cannot request code</Typography>
+          <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>Students cannot request code</Typography>
         </li>
         <li>
-          <Typography gutterBottom variant='body1'>The AI must ignore irrelevant questions</Typography>
+          <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>The AI must ignore irrelevant questions</Typography>
         </li>
         <li>
-          <Typography gutterBottom variant='body1'>Any information involving dates must be accurate and very robust, otherwise the program is liable for missed coursework.</Typography>
+          <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>Any information involving dates must be accurate and very robust, otherwise the program is liable for missed coursework.</Typography>
         </li>
       </ul>
-      <Typography gutterBottom variant='body1'>{`
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{`
         But the overarching challenge here is that there is a lot of course-grained information with factual answers, and only 4096 tokens in a single GPT-3 request. That's about the length of this project description. So how can I fit all the info about due dates, assignment specifics, technical questions and FAQs into a single prompt? 
         `}</Typography>
-      <Typography gutterBottom variant='body1'>{`
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{`
         Using some non-ai creativity, I start by partitioning the request into various categories. Do you have a technical question, a question about the assignment, or a question about the course overall? I designed custom prompts containing all the information necessary for each category, and prompts to evoke the correct behavior for the request. For example, if you are asking about a due date, the information must be explicitly listed in the prompt, or the AI must admit it doesn't know. It cannot guess an incorrect date. On the other hand, if it is a technical question, the AI has aggregated information from all the linux documentation on the internet, so it is quite well suited to pull from external sources.
         `}</Typography>
-      <Typography gutterBottom variant='body1'>{`
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{`
         I also included various sentiment classifiers to further constrain the activity of the AI to what is relevant for the course. This is necessary to convince the professor to put this in use by students. I have a fine-tuned classifier which labels the prompt as either 'text' or 'code', and blocks it if the latter if detected. This is to prevent plagiarism from the internet. I then use GPT-3's Moderation classifier to flag the question for inappropriateness, as per their terms of service. 
         `}</Typography>
-      <Typography gutterBottom variant='body1'>{`
+      <Typography sx={{fontWeight: "inherit"}}gutterBottom variant='body1'>{`
         The end product is all the information about a course, compressed into a single chatbot. This is current undergoing review, and is already in use by a select group of student beta testers! It's extremely exciting to witness this new paradigm of language models, and even more exciting to be a part of it!
         `}</Typography>
     </React.Fragment>
@@ -212,7 +212,7 @@ const GPT3AI_ld = () => {
 const RaceQuad_ld = () => {
   return (
     <React.Fragment>
-      <Typography gutterBottom variant='body1'>{"I built an FPV 5in 4S quadcopter for racing and freestyling. It can hit 80mph at top speed, and fly continuously for 6 minutes. I've built many drones over the past years, but often reuse parts from my current build. Flying robots are awesome!"}</Typography>
+      <Typography sx={{fontWeight: "inherit"}} gutterBottom variant='body1'>{"I built an FPV 5in 4S quadcopter for racing and freestyling. It can hit 80mph at top speed, and fly continuously for 6 minutes. I've built many drones over the past years, but often reuse parts from my current build. Flying robots are awesome!"}</Typography>
       <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" sx={{ margin: "50px" }}>
         <Box
           component="img"
@@ -222,7 +222,7 @@ const RaceQuad_ld = () => {
           height="auto"
           sx={{ borderRadius: "10px" }}
         />
-        <Typography align="center" variant="caption" sx={{ maxWidth: "250px" }}>
+        <Typography sx={{fontWeight: "inherit", maxWidth: "250px"}} align="center" variant="caption">
           My larger S500 platform. Used for experiments rather than racing. I'm calibrating the GPS in this picture.
         </Typography>
       </Box>
@@ -236,7 +236,7 @@ const RaceQuad_ld = () => {
           height="auto"
           sx={{ borderRadius: "10px" }}
         />
-        <Typography align="center" variant="caption" sx={{ maxWidth: "250px" }}>
+        <Typography sx={{fontWeight: "inherit", maxWidth: "250px"}}align="center" variant="caption">
           One of my smaller 3" quads during a repair session.
         </Typography>
       </Box>
@@ -335,18 +335,18 @@ function App() {
             )
           })
         }
-        <Grid display="flex" flexDirection="column" alignItems="flex-start" justifyContent="center" color="white" item xs={12} sm={6} md={4}>
-          <Typography>
+        <Grid sx={{fontWeight: "300"}} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="center" color="white" item xs={12} sm={6} md={4}>
+          <Typography sx={{fontWeight: "inherit"}}>
             + 2 Omitted&nbsp;(NDAs)
           </Typography>
           <ul>
             <li>
-              <Typography align="left">
+              <Typography align="left" sx={{fontWeight: "inherit"}}>
                 MITRE
               </Typography>
             </li>
             <li>
-              <Typography align="left">
+              <Typography align="left" sx={{fontWeight: "inherit"}}>
                 Hume Center for National Security &amp; Technology
               </Typography>
             </li>
@@ -387,9 +387,9 @@ function App() {
                   <Divider sx={{ height: "1px", backgroundColor: "white", width: "100%", marginTop: "10px" }} />
                 </Typography>
 
-                <Typography align="left" variant="body1">
+                <Box align="left" variant="body1" sx={{fontWeight: "300"}}>
                   {pinfo.longDescription}
-                </Typography>
+                </Box>
               </Box>
             </ThemeProvider>
           )

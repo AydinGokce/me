@@ -43,10 +43,10 @@ function About(props) {
                                 }}
                             />
                             <Box sx={{ padding: "0px 10px" }}>
-                                <Typography gutterBottom align={smallScreen ? "center" : "left"} variant="body1" color="white" fontWeight="Bold">
+                                <Typography gutterBottom align={smallScreen ? "center" : "left"} variant="body1" color="white" fontWeight="Bold" sx={{fontWeight: "500"}}>
                                     About Me
                                 </Typography>
-                                <Typography gutterBottom align={smallScreen ? "center" : "left"} variant="body1" color="white">
+                                <Typography gutterBottom align={smallScreen ? "center" : "left"} variant="body1" color="white" sx={{fontWeight: "300"}}>
                                     I'm interested in computational biology, information theory, robotics, AI and statecraft. I'm an AI robotics researcher at Virginia Tech and I'm independently researching how morphology can be simulated with cellular automata. Action &gt; everything.
                                 </Typography>
                                 <Typography align={smallScreen ? "center" : "left"} variant="body1" color="white" sx={{ fontStyle: 'italic' }}>
@@ -69,9 +69,6 @@ function About(props) {
                             <Divider flexItem variant='middle' sx={{ color: 'white', "&::before, &::after": { borderColor: "white", }, }} >✧</Divider>
                         </Grid>
                         <Grid item sx={{ marginTop: '40px', padding: "0px 10px", width: '100%', maxWidth: '1500px' }}>
-                            <Typography gutterBottom align={smallScreen ? "center" : "left"} variant="body1" color="white" fontWeight="Bold">
-                                Skills
-                            </Typography>
                             <SkillsGrid />
                             <Grid item sx={{ margin: '40px 0px', width: '100%' }}>
                                 <Divider flexItem variant='middle' sx={{ color: 'white', "&::before, &::after": { borderColor: "white", }, }} >✧</Divider>

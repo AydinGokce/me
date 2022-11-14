@@ -1,40 +1,42 @@
 import React from 'react'
-
-import { Grid, Typography } from '@mui/material'
+import { useMediaQuery, Box, Typography, Grid, Fade, Divider, CssBaseline, Accordion, AccordionDetails, AccordionSummary, Link, IconButton, Chip, Card, CardMedia, CardContent, ThemeProvider } from '@mui/material'
 
 function SkillsGrid() {
+
+    const skills = [
+        {
+            category: "Languages",
+            skills: ["Python", "C", "C++", "Java", "JavaScript", "MATLAB", "HTML", "CSS", "SQL", "Bash", "LaTeX", "Markdown"]
+        },
+        {
+            category: "Robotics",
+            skills: ["ROS", "PyBullet", "OpenCV", "Fusion 360", "Gazebo", "Redis", "3D Printing", "Soldering", "Arduino", "Raspberry Pi", "Jetson Nano", "Circuit Design", "Pneumatics", "Quadcopters", "UAVs"]
+        },
+        {
+            category: "Machine Learning/AI",
+            skills: ["Reinforcement Learning", "Computer Vision", "CNNs", "RNNs", "GANs", "Transformers", "Tensorflow", "Keras", "PyTorch", "SKLearn", "Pandas", "Numpy", "SB3", "Ray", "Jupyter", "Google Colab"]
+        },
+        {
+            category: "Web Development",
+            skills: ["React", "Node.js", "Express", "SQL Databases", "Firebase", "Docker", "AWS", "Heroku"]
+        },
+    ]
+
     return (
-        <Grid container spacing={2} sx={{width: "100%"}}>
-            <Grid item xs={12} >
-                <Typography align="left" variant="h6" color="white">Languages</Typography>
-                <Typography align="left" variant="body1" color="white">
-                    - Expert: Java, Python, JavaScript, HTML, CSS
-                </Typography>
-                <Typography align="left" variant="body1" color="white">
-                    - Intermediate: C, MATLAB, SQL
-                </Typography>
+        <Box>
+            <Grid container spacing={2}>
+                {skills.map((skill, index) => (
+                    <Grid item xs={12} sm={6} md={3} key={index}>
+                        <Typography variant='h5' color='white' sx={{ fontWeight: '300' }}>
+                            {skill.category}
+                        </Typography>
+                        <Typography variant='body1' color='white' sx={{ fontWeight: '1' }}>
+                            {skill.skills.join(", ")}
+                        </Typography>
+                    </Grid>
+                ))}
             </Grid>
-            <Grid item xs={12}>
-                <Typography align="left" variant="h6" color="white">Robotics</Typography>
-                <Typography align="left" variant="body1" color="white">
-                    - ROS, PyBullet, OpenCV, Fusion 360, Redis
-                </Typography>
-            </Grid>
-            <Grid item xs={12}>
-                <Typography align="left" variant="h6" color="white">Machine Learning</Typography>
-                <Typography align="left" variant="body1" color="white">- Theory: RL, computer vision, transformers, GANs, optimization</Typography>
-                <Typography align="left" variant="body1" color="white">- Tools: TensorFlow, PyTorch, Keras, Scikit-Learn, Pandas, Numpy, SB3, Ray</Typography>
-            </Grid>
-            <Grid item xs={12}>
-                <Typography align="left" variant="h6" color="white">Web Development</Typography>
-                <Typography align="left" variant="body1" color="white">- React, Node.js, Express, Firebase</Typography>
-            </Grid>
-            <Grid item xs={12}>
-                <Typography align="left" variant="h6" color="white">Other</Typography>
-                <Typography align="left" variant="body1" color="white">- General: Git, Linux, Docker, Bash, LaTeX, Jupyter, Vim</Typography>
-                <Typography align="left" variant="body1" color="white">- Hardware: Arduino, Raspberry Pi, STM32, FPGA, Soldering</Typography>
-            </Grid>
-        </Grid>
+        </Box>
     )
 }
 
