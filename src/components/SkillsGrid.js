@@ -18,7 +18,7 @@ function SkillsGrid() {
         },
         {
             category: "Web Development",
-            skills: ["React", "Node.js", "Express", "SQL Databases", "Firebase", "Docker", "AWS", "Heroku"]
+            skills: ["React", "Node.js", "Express", "SQL Databases", "Flask", "Firebase", "Docker", "AWS", "Heroku"]
         },
     ]
 

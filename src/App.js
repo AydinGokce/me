@@ -1,6 +1,5 @@
 import './App.css';
-import { useNavigate } from 'react-router-dom';
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import EmailIcon from '@mui/icons-material/Email';
@@ -8,9 +7,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { useMediaQuery, Box, Typography, Button, Grid, Fade, Divider, Accordion, createTheme, ThemeProvider, CssBaseline, AccordionDetails, AccordionSummary, Link, IconButton, Chip, Card, CardMedia, CardContent, ButtonBase } from '@mui/material'
+import { Box, Typography, Grid, createTheme, ThemeProvider, CssBaseline, Link, IconButton, } from '@mui/material'
 import './style.scss';
-import Tetra from './assets/cursor.gif';
 import { Helmet } from 'react-helmet';
 import Mordo from './assets/mordo2.JPG'
 import ProjectCard from './components/ProjectCard';
@@ -19,7 +17,6 @@ import Legs from './assets/legs.jpeg';
 import Planarian from './assets/planarian.gif';
 import SchoolOfAthens from './assets/athens.jpg';
 import Wheatley from './assets/wheatley.gif';
-import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import GPT3 from './assets/gpt3.webp';
 import RaceQuad from './assets/race_quad.jpg'
 import Cerebellia from './assets/cerebellia_logo.png'
@@ -33,7 +30,6 @@ import S500 from './assets/s500.jpg'
 import Pendulum from './assets/pendulum.jpg'
 import ProjectParser from './components/ProjectParser';
 import Tricking from './pages/Tricking';
-import PageTemplate from './components/PageTemplate';
 
 const firebaseConfig = {
   apiKey: "AIzaSyB3nCos29fJeLRTWLMg9-Cgz1fXvXZ31R4",
@@ -248,7 +244,6 @@ const RaceQuad_ld = () => {
 }
 
 function App() {
-  const navigate = useNavigate();
 
   const projectsInfo = [
 
