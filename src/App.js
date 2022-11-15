@@ -359,42 +359,6 @@ function App() {
     )
   }
 
-  const GetProjectPaths = (theme) => {
-    return (
-      projectsInfo.map((pinfo, idx) => {
-
-        const Component = () => {
-          return (
-            <ThemeProvider theme={theme}>
-              <CssBaseline />
-              <PageTemplate child={
-                <React.Fragment>
-                  <Box
-                    component="img"
-                    src={pinfo.pic}
-                    sx={{ borderRadius: "10px", width: "100%", maxWidth: "250px", marginBottom: "10px" }}
-                  />
-                  <Typography gutterBottom align="left" variant="h3">
-                    {pinfo.title}
-                    <Divider sx={{ height: "1px", backgroundColor: "white", width: "100%", marginTop: "10px" }} />
-                  </Typography>
-
-                  <Box align="left" variant="body1" sx={{ fontWeight: "300" }}>
-                    {pinfo.longDescription}
-                  </Box>
-                </React.Fragment>
-              } />
-            </ThemeProvider>
-          )
-        }
-
-        return (
-          <Route path={pinfo.path} element={<Component />} key={idx} />
-        )
-      })
-    )
-  }
-
   return (
     <div className="App">
       <ThemeProvider theme={theme}>

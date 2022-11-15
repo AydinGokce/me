@@ -4,7 +4,7 @@ import { Box, Typography, Button } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 
-function PageTemplate(child) {
+function PageTemplate(props) {
     const navigate = useNavigate();
     return (
         <Box
@@ -18,7 +18,7 @@ function PageTemplate(child) {
                     Back Home
                 </Typography>
             </Button>
-            {child}
+            {props.child}
         </Box>
     )
 }
