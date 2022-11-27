@@ -30,6 +30,7 @@ import S500 from './assets/s500.jpg'
 import Pendulum from './assets/pendulum.jpg'
 import ProjectParser from './components/ProjectParser';
 import Tricking from './pages/Tricking';
+import Demo4Contrary from './pages/Demo4Contrary';
 
 const firebaseConfig = {
   apiKey: "AIzaSyB3nCos29fJeLRTWLMg9-Cgz1fXvXZ31R4",
@@ -367,8 +368,9 @@ function App() {
           <Routes>
             <Route path="/" element={<About theme={theme} projectCards={<GetProjectCards />} />} />
             <Route path="/tricking" element={<Tricking theme={theme} />} />
+            <Route path="/demos-4-contrary" element={<Demo4Contrary theme={theme} />} />
             <Route path="*" element={<ProjectParser theme={theme} pinfo={projectsInfo} />} />
-
+          
           </Routes>
           <Box
             display="flex"
