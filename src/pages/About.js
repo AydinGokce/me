@@ -5,13 +5,16 @@ import Tetra from '../assets/tetra2.gif'
 import Styles from '../Styles';
 import Header from '../components/Header';
 import SkillsGrid from '../components/SkillsGrid';
-
+import { useNavigate } from 'react-router-dom';
+import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
 function About(props) {
     const { containerRef, theme, projectCards } = props;
     const [expanded1, setExpanded1] = React.useState(false);
     const [expanded2, setExpanded2] = React.useState(false);
+    const navigate = useNavigate();
     const styles = Styles(theme);
     //check if screen is sm using breakpoints
     const smallScreen = useMediaQuery(theme.breakpoints.down('md'));
@@ -44,15 +47,22 @@ function About(props) {
                                 }}
                             />
                             <Box sx={{ padding: "0px 10px" }}>
-                                <Typography gutterBottom align={smallScreen ? "center" : "left"} variant="body1" color="white" fontWeight="Bold" sx={{fontWeight: "500"}}>
+                                <Typography gutterBottom align={smallScreen ? "center" : "left"} variant="body1" color="white" fontWeight="Bold" sx={{ fontWeight: "500" }}>
                                     About Me
                                 </Typography>
-                                <Typography gutterBottom align={smallScreen ? "center" : "left"} variant="body1" color="white" sx={{fontWeight: "300"}}>
+                                <Typography gutterBottom align={smallScreen ? "center" : "left"} variant="body1" color="white" sx={{ fontWeight: "300" }}>
                                     I'm interested in computational biology, information theory, robotics, AI and statecraft. I'm an AI robotics researcher at Virginia Tech and I'm independently researching how morphology can be simulated with cellular automata. Action &gt; everything.
                                 </Typography>
-                                <Typography align={smallScreen ? "center" : "left"} variant="body1" color="white" sx={{ fontStyle: 'italic' }}>
+                                <Typography gutterBottom align={smallScreen ? "center" : "left"} variant="body1" color="white" sx={{ fontStyle: 'italic' }}>
                                     "Man is completely human when he is at play" - Carl G. Jung
                                 </Typography>
+                                <Box display="flex" alignItems="center" justifyContent="center" sx={{ width: "100%", marginTop: "25px" }}>
+                                    <Button size="small" sx={{ marginBottom: "10px", border: "1px solid white" }} endIcon={<ArrowForwardIcon sx={{ color: "white" }} />} onClick={() => window.open("https://aydingokce.com/resume.pdf", '_blank')}>
+                                        <Typography sx={{ fontWeight: "bold", color: "white" }}>
+                                            View Resume
+                                        </Typography>
+                                    </Button>
+                                </Box>
                             </Box>
                         </Grid>
                         <Grid item sx={{ marginTop: '20px', width: '100%' }}>
